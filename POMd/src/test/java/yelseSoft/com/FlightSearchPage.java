@@ -20,20 +20,32 @@ public class FlightSearchPage {
 
         WebElement flightSearch = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(AllXpaths.FLIGHT_SEARCH_INPUT)));
         flightSearch.clear();
+       
         flightSearch.sendKeys(departureCity);
 
         WebDriverWait waitForResults1 = new WebDriverWait(driver, Duration.ofSeconds(10)); 
-        WebElement sResult = waitForResults1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class=\"zsRT0d\"])[1]")));
+        WebElement sResult = waitForResults1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class='zsRT0d'])[1]")));
         sResult.click();
 
         WebElement flightSearchTo = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(AllXpaths.FLIGHT_SEARCH_TO_INPUT)));
+        flightSearch.clear();
+       
         flightSearchTo.sendKeys(destinationCity);
-
+        
         WebDriverWait waitForResults = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement firstResult = waitForResults.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class=\"zsRT0d\"])[1]")));
+        WebElement firstResult = waitForResults.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@class='zsRT0d'])[1]")));
         firstResult.click();
 
         WebElement findFlight = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(AllXpaths.FIND_FLIGHT_BUTTON)));
         findFlight.click();
+        pauseExecution(3000);
+    }
+    
+    public static void pauseExecution(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

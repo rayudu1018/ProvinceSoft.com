@@ -4,7 +4,7 @@ public class AllXpaths {
 
 	// Locators for departure and return dates
 	public static final String DEPARTURE_DATE_INPUT = "(//div[@class='BLohnc q5Vmde'])[1]";
-	public static final String DEPARTURE_DATE = "//div[contains(@aria-label,'Sunday, September 1, 2024')]";
+	public static final String DEPARTURE_DATE = "//div[contains(@aria-label,'Sunday, September 3, 2024')]";
 	public static final String RETURN_DATE_INPUT = "(//input[@placeholder='Return'])[2]";
 	public static final String RETURN_DATE = "//div[contains(@aria-label,'Thursday, September 5, 2024')]";
 
@@ -30,7 +30,5 @@ public class AllXpaths {
 	public static final String MORE_FLIGHTS = "//span[@class=\"bEfgkb \"]";
 	public static final String SECOND_FLIGHTS = "//h3[contains(text(),'Other departing flights')]/following-sibling::ul[@class='Rk10dc']\r\n"
 			+ "";
-
-
 
 }

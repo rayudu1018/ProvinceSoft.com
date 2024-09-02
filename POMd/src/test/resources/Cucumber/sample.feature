@@ -10,4 +10,3 @@ Feature: Flight Search Automation
       | New York       | London           |
       | San Francisco  | Paris            |
       | Los Angeles    | New York         |
-

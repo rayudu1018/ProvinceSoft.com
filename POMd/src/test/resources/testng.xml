@@ -1,8 +1,11 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="FlightSearchSuite" parallel="tests" thread-count="5">
-    <test name="FlightSearchTest">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Flight Search Suite" parallel="tests" thread-count="3">
+
+    <test name="FlightSearchTest1">
         <classes>
-            <class name="yelseSoft.com.FlightSearchSteps" />
+            <class name="yelseSoft.com.FlightSearchSteps"/>
         </classes>
     </test>
+
 </suite>
+
