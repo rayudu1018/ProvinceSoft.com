@@ -5,8 +5,3 @@ Feature: Flight Search Automation
     When the user searches for flights from "<departureCity>" to "<destinationCity>"
     Then the flight details should be extracted and displayed
 
-    Examples:
-      | departureCity | destinationCity |
-      | New York       | London           |
-      | San Francisco  | Paris            |
-      | Los Angeles    | New York         |

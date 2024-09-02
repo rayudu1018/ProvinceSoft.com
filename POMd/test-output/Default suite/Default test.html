@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 02 08:55:31 CDT 2024</td>
+<td>Started on:</td><td>Mon Sep 02 15:42:56 CDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>83 seconds (83112 ms)</td>
+<tr><td>Total time:</td><td>94 seconds (94834 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='yelseSoft.com.FlightSearchSteps.testFlightSearch()'><b>testFlightSearch</b><br>Test class: yelseSoft.com.FlightSearchSteps<br>Parameters: Los Angeles, New York</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference 357eda8e-2987-4812-b31a-6779c154f776 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+<td title='yelseSoft.com.FlightSearchSteps.testFlightSearch()'><b>testFlightSearch</b><br>Test class: yelseSoft.com.FlightSearchSteps<br>Parameters: New York, London, 2024-09-09, 2024-11-11</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference a780e695-0831-40ba-ae51-56261f630bb9 is stale; either its node document is not the active document, or it is no longer connected to the DOM
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [278f827d-b9e9-4b25-bfe9-1fa821ff66ce, getElementText {id=357eda8e-2987-4812-b31a-6779c154f776}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:debuggerAddress: 127.0.0.1:6371, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 141592, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:6371/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[[[[[FirefoxDriver: firefox on windows (278f827d-b9e9-4b25-bfe9-1fa821ff66ce)] -&gt; xpath: //ul[@class=&apos;Rk10dc&apos;]]] -&gt; xpath: .//li]] -&gt; xpath: .//span[contains(@aria-label, &apos;Arrival time&apos;)]]
-Session ID: 278f827d-b9e9-4b25-bfe9-1fa821ff66ce
+Command: [3cd5d605-add6-422f-8d85-d5e5364c0cfe, findChildElement {using=xpath, id=a780e695-0831-40ba-ae51-56261f630bb9, value=.//span[contains(@aria-label, &apos;Departure time&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:debuggerAddress: 127.0.0.1:17506, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 178500, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17506/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 3cd5d605-add6-422f-8d85-d5e5364c0cfe
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -96,9 +95,11 @@ Session ID: 278f827d-b9e9-4b25-bfe9-1fa821ff66ce
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at yelseSoft.com.FlightDetails.extractFlightDetails(FlightDetails.java:40)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+	at yelseSoft.com.FlightDetails.extractFlightDetails(FlightDetails.java:123)
 	at yelseSoft.com.FlightSearchSteps.testFlightSearch(FlightSearchSteps.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -126,16 +127,15 @@ Session ID: 278f827d-b9e9-4b25-bfe9-1fa821ff66ce
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace840665187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace840665187'><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference 357eda8e-2987-4812-b31a-6779c154f776 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+</pre></div><a href='#' onClick='toggleBox("stack-trace1594981181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594981181'><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference a780e695-0831-40ba-ae51-56261f630bb9 is stale; either its node document is not the active document, or it is no longer connected to the DOM
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [278f827d-b9e9-4b25-bfe9-1fa821ff66ce, getElementText {id=357eda8e-2987-4812-b31a-6779c154f776}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:debuggerAddress: 127.0.0.1:6371, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 141592, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:6371/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[[[[[FirefoxDriver: firefox on windows (278f827d-b9e9-4b25-bfe9-1fa821ff66ce)] -&gt; xpath: //ul[@class=&apos;Rk10dc&apos;]]] -&gt; xpath: .//li]] -&gt; xpath: .//span[contains(@aria-label, &apos;Arrival time&apos;)]]
-Session ID: 278f827d-b9e9-4b25-bfe9-1fa821ff66ce
+Command: [3cd5d605-add6-422f-8d85-d5e5364c0cfe, findChildElement {using=xpath, id=a780e695-0831-40ba-ae51-56261f630bb9, value=.//span[contains(@aria-label, &apos;Departure time&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:debuggerAddress: 127.0.0.1:17506, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 178500, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17506/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 3cd5d605-add6-422f-8d85-d5e5364c0cfe
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -146,9 +146,11 @@ Session ID: 278f827d-b9e9-4b25-bfe9-1fa821ff66ce
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at yelseSoft.com.FlightDetails.extractFlightDetails(FlightDetails.java:40)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+	at yelseSoft.com.FlightDetails.extractFlightDetails(FlightDetails.java:123)
 	at yelseSoft.com.FlightSearchSteps.testFlightSearch(FlightSearchSteps.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -177,8 +179,8 @@ Session ID: 278f827d-b9e9-4b25-bfe9-1fa821ff66ce
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>11</td>
-<td>yelseSoft.com.FlightSearchSteps@537f60bf</td></tr>
+<td>21</td>
+<td>yelseSoft.com.FlightSearchSteps@17503f6b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -189,15 +191,15 @@ Session ID: 278f827d-b9e9-4b25-bfe9-1fa821ff66ce
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='yelseSoft.com.FlightSearchSteps.testFlightSearch()'><b>testFlightSearch</b><br>Test class: yelseSoft.com.FlightSearchSteps<br>Parameters: San Francisco, Dallas</td>
+<td title='yelseSoft.com.FlightSearchSteps.testFlightSearch()'><b>testFlightSearch</b><br>Test class: yelseSoft.com.FlightSearchSteps<br>Parameters: Los Angeles, New York, 2024-09-09, 2024-11-11</td>
 <td></td>
-<td>21</td>
-<td>yelseSoft.com.FlightSearchSteps@537f60bf</td></tr>
+<td>39</td>
+<td>yelseSoft.com.FlightSearchSteps@17503f6b</td></tr>
 <tr>
-<td title='yelseSoft.com.FlightSearchSteps.testFlightSearch()'><b>testFlightSearch</b><br>Test class: yelseSoft.com.FlightSearchSteps<br>Parameters: New York, London</td>
+<td title='yelseSoft.com.FlightSearchSteps.testFlightSearch()'><b>testFlightSearch</b><br>Test class: yelseSoft.com.FlightSearchSteps<br>Parameters: San Francisco, Dallas, 2024-09-09, 2024-11-11</td>
 <td></td>
-<td>40</td>
-<td>yelseSoft.com.FlightSearchSteps@537f60bf</td></tr>
+<td>24</td>
+<td>yelseSoft.com.FlightSearchSteps@17503f6b</td></tr>
 </table><p>
 </body>
 </html>

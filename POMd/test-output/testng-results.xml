@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-02T15:09:40 CDT" name="Flight Search Suite" finished-at="2024-09-02T15:10:47 CDT" duration-ms="66976">
+  <suite started-at="2024-09-02T17:20:51 CDT" name="Flight Search Suite" finished-at="2024-09-02T17:22:17 CDT" duration-ms="85828">
     <groups>
     </groups>
-    <test started-at="2024-09-02T15:09:40 CDT" name="FlightSearchTest1" finished-at="2024-09-02T15:10:47 CDT" duration-ms="66976">
+    <test started-at="2024-09-02T17:20:51 CDT" name="FlightSearchTest" finished-at="2024-09-02T17:22:17 CDT" duration-ms="85828">
       <class name="yelseSoft.com.FlightSearchSteps">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:09:40 CDT" name="setUp" finished-at="2024-09-02T15:09:43 CDT" duration-ms="2829" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:20:52 CDT" name="setUp" finished-at="2024-09-02T17:20:54 CDT" duration-ms="2852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:09:43 CDT" name="testFlightSearch" data-provider="flightData" finished-at="2024-09-02T15:10:05 CDT" duration-ms="22619" status="PASS">
+        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:20:54 CDT" name="testFlightSearch" data-provider="flightData" finished-at="2024-09-02T17:21:18 CDT" duration-ms="23646" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFlightSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:10:05 CDT" name="tearDown" finished-at="2024-09-02T15:10:05 CDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:21:18 CDT" name="tearDown" finished-at="2024-09-02T17:21:18 CDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:10:05 CDT" name="setUp" finished-at="2024-09-02T15:10:08 CDT" duration-ms="2461" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:21:18 CDT" name="setUp" finished-at="2024-09-02T17:21:21 CDT" duration-ms="2659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:10:08 CDT" name="testFlightSearch" data-provider="flightData" finished-at="2024-09-02T15:10:30 CDT" duration-ms="22162" status="PASS">
+        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:21:21 CDT" name="testFlightSearch" data-provider="flightData" finished-at="2024-09-02T17:21:43 CDT" duration-ms="22392" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,15 +71,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFlightSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:10:30 CDT" name="tearDown" finished-at="2024-09-02T15:10:30 CDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:10:30 CDT" name="setUp" finished-at="2024-09-02T15:10:33 CDT" duration-ms="2490" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:21:43 CDT" name="setUp" finished-at="2024-09-02T17:21:46 CDT" duration-ms="2760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:10:33 CDT" name="testFlightSearch" data-provider="flightData" finished-at="2024-09-02T15:10:47 CDT" duration-ms="14374" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:21:43 CDT" name="tearDown" finished-at="2024-09-02T17:21:43 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:21:46 CDT" name="testFlightSearch" data-provider="flightData" finished-at="2024-09-02T17:22:17 CDT" duration-ms="31475" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,73 +102,14 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[The element with the reference 25c4b9f6-704a-42c6-8871-818d4c746204 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [80457416-a086-4260-ab95-ace314683fda, findChildElement {using=xpath, value=.//span[contains(@aria-label, 'Departure time')], id=25c4b9f6-704a-42c6-8871-818d4c746204}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:debuggerAddress: 127.0.0.1:18864, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 176148, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:18864/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 80457416-a086-4260-ab95-ace314683fda]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference 25c4b9f6-704a-42c6-8871-818d4c746204 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [80457416-a086-4260-ab95-ace314683fda, findChildElement {using=xpath, value=.//span[contains(@aria-label, 'Departure time')], id=25c4b9f6-704a-42c6-8871-818d4c746204}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:debuggerAddress: 127.0.0.1:18864, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 176148, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:18864/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 80457416-a086-4260-ab95-ace314683fda
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
-at yelseSoft.com.FlightDetails.extractFlightDetails(FlightDetails.java:61)
-at yelseSoft.com.FlightSearchSteps.testFlightSearch(FlightSearchSteps.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFlightSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T15:10:47 CDT" name="tearDown" finished-at="2024-09-02T15:10:47 CDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:yelseSoft.com.FlightSearchSteps@17503f6b]" started-at="2024-09-02T17:22:17 CDT" name="tearDown" finished-at="2024-09-02T17:22:17 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- yelseSoft.com.FlightSearchSteps -->
-    </test> <!-- FlightSearchTest1 -->
+    </test> <!-- FlightSearchTest -->
   </suite> <!-- Flight Search Suite -->
 </testng-results>

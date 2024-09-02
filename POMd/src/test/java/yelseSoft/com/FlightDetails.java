@@ -22,38 +22,26 @@ public class FlightDetails {
 		List<Integer> prices = new ArrayList<>();
 		List<Integer> durations = new ArrayList<>();
 		List<String> flightNames = new ArrayList<>();
-		
-		String originalWindow = driver.getWindowHandle();
-		//System.out.println("Current window address: " + originalWindow);
 
+		String originalWindow = driver.getWindowHandle();
 		List<String> windowHandles = new ArrayList<>(driver.getWindowHandles());
 		if (windowHandles.size() > 1) {
 			String secondWindowHandle = windowHandles.get(1);
-			// System.out.println("Second Window Handle: " + secondWindowHandle);
 			driver.switchTo().window(secondWindowHandle);
 		}
-
-		WebElement departureInput = driver.findElement(By.xpath("//input[@placeholder='Departure']"));
-
+		WebElement departureInput = driver.findElement(By.xpath(AllXpaths.Departure));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", departureInput);
 		departureInput.clear();
 		departureInput.sendKeys(departureDate,Keys.ENTER);
-		
-
-		WebElement returnInput = driver.findElement(By.xpath("//input[@placeholder='Return']"));
+		WebElement returnInput = driver.findElement(By.xpath(AllXpaths.Return));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", returnInput);
 		returnInput.clear();
 		returnInput.sendKeys(returnDate,Keys.ENTER);
-		
 		WebElement countoful = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(AllXpaths.FLIGHT_LIST_UL)));
 		pauseExecution(3000);
 		List<WebElement> countofli = countoful.findElements(By.xpath(AllXpaths.FLIGHT_LIST_ITEM));
-
 		int totalItemCountFirst = countofli.size();
 
-		
-		//////
-		
 		for (int i = 0; i < totalItemCountFirst; i++) {
 			WebElement ulElement = countofli.get(i);
 
@@ -86,37 +74,18 @@ public class FlightDetails {
 
 				WebElement roundTripElement = ulElement.findElement(By.xpath(AllXpaths.ROUND_TRIP));
 				String roundTripText = roundTripElement.getText();
-//				System.out.println("count:"+count++);
-//				System.out.println("Departure Time: " + departure + " Arrival Time: " + arrival);
-//				System.out.println("Total Duration Time: " + totalTime);
-//				System.out.println("From: " + fromAirportCode + "  To: " + toAirportCode);
-//				System.out.println("Price: " + priceText + " for: " + roundTripText);
-
 			} catch (NoSuchElementException e) {
 				System.out.println("Element not found: " + e.getMessage());
 			}
 		}
-
-		// second set 
 		WebElement initialUl = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(AllXpaths.SECOND_FLIGHTS)));
 		List<WebElement> initialLiList = initialUl.findElements(By.xpath(AllXpaths.FLIGHT_LIST_ITEM));
-		//System.out.println("INITIAL FLIGHTS LIST COUNT: " + initialLiList.size());
-
-
 		WebElement clickButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(AllXpaths.MORE_FLIGHTS)));
 		clickButton.click();
-
 		pauseExecution(3000);
 		WebElement updatedUl = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(AllXpaths.SECOND_FLIGHTS)));
-
-
 		List<WebElement> updatedLiList = updatedUl.findElements(By.xpath(AllXpaths.FLIGHT_LIST_ITEM));
-		//System.out.println("UPDATED FLIGHTS LIST COUNT: " + updatedLiList.size());
-
 		int totalItemCount = updatedLiList.size();
-		//System.out.println("UPDATED FLIGHTS LIST COUNT: " + totalItemCount);
-
-		// Iterate and process all items in the list
 		for (int i = 0; i < totalItemCount -1; i++) {
 			WebElement liElement = updatedLiList.get(i);
 			try {
@@ -148,78 +117,78 @@ public class FlightDetails {
 				WebElement roundTripElement = liElement.findElement(By.xpath(AllXpaths.ROUND_TRIP));
 				String roundTripText = roundTripElement.getText();
 
-//				System.out.println("Departure Time: " + departure + " Arrival Time: " + arrival);
-//				System.out.println("Total Duration Time: " + totalTime);
-//				System.out.println("From: " + fromAirportCode + "  To: " + toAirportCode);
-//				System.out.println("Price: " + priceText + " for: " + roundTripText);
+				//				System.out.println("Departure Time: " + departure + " Arrival Time: " + arrival);
+				//				System.out.println("Total Duration Time: " + totalTime);
+				//				System.out.println("From: " + fromAirportCode + "  To: " + toAirportCode);
+				//				System.out.println("Price: " + priceText + " for: " + roundTripText);
 
 			} catch (NoSuchElementException e) {
 				System.out.println("Element not found: " + e.getMessage());
 			}
-			
+
 		}
+
+		printFlightDetails(prices, durations, flightNames, departureCity, destinationCity,departureDate,returnDate);
+	}	
+
+	private static void printFlightDetails(List<Integer> prices, List<Integer> durations, List<String> flightNames,String departureCity, String destinationCity,String departureDate,String returnDate) {
+		if (!prices.isEmpty() && !durations.isEmpty() && !flightNames.isEmpty()) {
 		
-		printFlightDetails(prices, durations, flightNames, departureCity, destinationCity,departureDate,returnDate);}	
- ///second
-    private static void printFlightDetails(List<Integer> prices, List<Integer> durations, List<String> flightNames,String departureCity, String destinationCity,String departureDate,String returnDate) {
-        if (!prices.isEmpty() && !durations.isEmpty() && !flightNames.isEmpty()) {
-            // For Finding the cheapest and most expensive flights
-            int cheapestPrice = Collections.min(prices);
-            int cheapestIndex = prices.indexOf(cheapestPrice);
-            int mostExpensivePrice = Collections.max(prices);
-            int mostExpensiveIndex = prices.indexOf(mostExpensivePrice);
+			int cheapestPrice = Collections.min(prices);
+			int cheapestIndex = prices.indexOf(cheapestPrice);
+			int mostExpensivePrice = Collections.max(prices);
+			int mostExpensiveIndex = prices.indexOf(mostExpensivePrice);
 
-            // For Finding the shortest and longest durations
-            int shortestDuration = Collections.min(durations);
-            int shortestIndex = durations.indexOf(shortestDuration);
-            int longestDuration = Collections.max(durations);
-            int longestIndex = durations.indexOf(longestDuration);
+			int shortestDuration = Collections.min(durations);
+			int shortestIndex = durations.indexOf(shortestDuration);
+			int longestDuration = Collections.max(durations);
+			int longestIndex = durations.indexOf(longestDuration);
 
-            System.out.println("****************************");
-            System.out.println("");
-            System.out.println("From: " + departureCity + " To: " + destinationCity);
-            System.out.println("From: " + departureDate + " To: " + returnDate);
-            System.out.println("");
-            System.out.println("****************************");
-         
-            System.out.println("");
-            System.out.println("**Cheapest price flight details are: **");
-            System.out.println("              Price: $" + cheapestPrice);
-            System.out.println("              Duration: " + Utils.formatDuration(durations.get(cheapestIndex)));
-            System.out.println("              Flight Name: " + flightNames.get(cheapestIndex));
-            
-            System.out.println("");
-            System.out.println("**Most Expensive price flight details are: **");
-            System.out.println("              Price: $" + mostExpensivePrice);
-            System.out.println("              Duration: " + Utils.formatDuration(durations.get(mostExpensiveIndex)));
-            System.out.println("              Flight Name: " + flightNames.get(mostExpensiveIndex));
-            System.out.println("");
+			System.out.println("****************************");
+			System.out.println("");
+			System.out.println("From: " + departureCity + " To: " + destinationCity);
+			System.out.println("From: " + departureDate + " To: " + returnDate);
+			System.out.println("");
+			System.out.println("****************************");
 
-            System.out.println("****************************");
-            
-            System.out.println("**Shortest Duration flight details are: **");
-            System.out.println("              Duration: " + Utils.formatDuration(shortestDuration));
-            System.out.println("              Price: $" + prices.get(shortestIndex));
-            System.out.println("              Flight Name: " + flightNames.get(shortestIndex));
+			System.out.println("");
+			System.out.println("**Cheapest price flight details are: **");
+			System.out.println("              Price: $" + cheapestPrice);
+			System.out.println("              Duration: " + Utils.formatDuration(durations.get(cheapestIndex)));
+			System.out.println("              Flight Name: " + flightNames.get(cheapestIndex));
 
-            System.out.println("");
-            System.out.println("**Longest Duration flight details are: **");
-            System.out.println("              Duration: " + Utils.formatDuration(longestDuration));
-            System.out.println("              Price: $" + prices.get(longestIndex));
-            System.out.println("              Flight Name: " + flightNames.get(longestIndex));
-            
-            pauseExecution(3000);
-        } else {
-            System.out.println("No flight data available to display.");
-        }
-    }
-    
-    public static void pauseExecution(int milliseconds) {
-        try {
-            Thread.sleep(milliseconds);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+			System.out.println("");
+			System.out.println("**Most Expensive price flight details are: **");
+			System.out.println("              Price: $" + mostExpensivePrice);
+			System.out.println("              Duration: " + Utils.formatDuration(durations.get(mostExpensiveIndex)));
+			System.out.println("              Flight Name: " + flightNames.get(mostExpensiveIndex));
+			System.out.println("");
+
+			System.out.println("****************************");
+
+			System.out.println("**Shortest Duration flight details are: **");
+			System.out.println("              Duration: " + Utils.formatDuration(shortestDuration));
+			System.out.println("              Price: $" + prices.get(shortestIndex));
+			System.out.println("              Flight Name: " + flightNames.get(shortestIndex));
+
+			System.out.println("");
+			System.out.println("**Longest Duration flight details are: **");
+			System.out.println("              Duration: " + Utils.formatDuration(longestDuration));
+			System.out.println("              Price: $" + prices.get(longestIndex));
+			System.out.println("              Flight Name: " + flightNames.get(longestIndex));
+
+			pauseExecution(3000);
+		} else {
+			System.out.println("No flight data available to display.");
+		}
+	}
+
+	public static void pauseExecution(int milliseconds) {
+		try {
+			Thread.sleep(milliseconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 
 }

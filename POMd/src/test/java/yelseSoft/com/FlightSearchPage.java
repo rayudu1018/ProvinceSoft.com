@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FlightSearchPage {
 
-    public static void searchForFlights(WebDriver driver, WebDriverWait wait, String departureCity, String destinationCity) {
+    public static void searchForFlights(WebDriver driver, WebDriverWait wait, String departureCity, String destinationCity,String departureDate,String returnDate) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         WebElement exploreButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(AllXpaths.EXPLORE_BUTTON)));
