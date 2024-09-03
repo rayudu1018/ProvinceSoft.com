@@ -29,7 +29,6 @@ public class FlightSearchPage {
 
         WebElement flightSearchTo = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(AllXpaths.FLIGHT_SEARCH_TO_INPUT)));
         flightSearch.clear();
-       
         flightSearchTo.sendKeys(destinationCity);
         
         WebDriverWait waitForResults = new WebDriverWait(driver, Duration.ofSeconds(10));
