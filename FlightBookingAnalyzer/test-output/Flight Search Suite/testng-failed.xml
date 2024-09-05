@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [Flight Search Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="FlightSearchTest(failed)">
+    <classes>
+      <class name="com.flightBooking.googleFlights.FlightSearchStepDefinitions">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testFlightSearchRegression"/>
+          <include name="testFlightSearch"/>
+          <include name="testFlightSearchSmoke"/>
+        </methods>
+      </class> <!-- com.flightBooking.googleFlights.FlightSearchStepDefinitions -->
+    </classes>
+  </test> <!-- FlightSearchTest(failed) -->
+</suite> <!-- Failed suite [Flight Search Suite] -->

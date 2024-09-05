@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FlightBookingAnalyzerSuite" verbose="1" parallel="false">
+
+    <test name="GoogleFlightsSearchTests">
+        <classes>
+            <!-- Add the classes that contain your tests -->
+            <class name="com.flightBooking.googleFlights.FlightSearchStepDefinitions" />
+            <class name="com.flightBooking.googleFlights.FlightTestData" />
+        </classes>
+    </test>
+
+</suite>

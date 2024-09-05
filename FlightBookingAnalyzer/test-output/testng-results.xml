@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-05T16:48:10 CDT" name="FlightBookingAnalyzerSuite" finished-at="2024-09-05T16:52:22 CDT" duration-ms="252019">
+    <groups>
+      <group name="regression">
+        <method signature="FlightSearchStepDefinitions.testFlightSearchRegression(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" name="testFlightSearchRegression" class="com.flightBooking.googleFlights.FlightSearchStepDefinitions"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="FlightSearchStepDefinitions.testFlightSearchSmoke(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" name="testFlightSearchSmoke" class="com.flightBooking.googleFlights.FlightSearchStepDefinitions"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-09-05T16:48:10 CDT" name="GoogleFlightsSearchTests" finished-at="2024-09-05T16:52:22 CDT" duration-ms="252019">
+      <class name="com.flightBooking.googleFlights.FlightSearchStepDefinitions">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:48:10 CDT" name="setUp" finished-at="2024-09-05T16:48:14 CDT" duration-ms="3256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:48:14 CDT" name="testFlightSearch" data-provider="flightTestData" finished-at="2024-09-05T16:48:33 CDT" duration-ms="18930" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element with the reference 06954b84-68d4-4ae4-961f-719f0908c6bf is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [536f59e8-93a8-461f-a5f4-6cfc370d491e, getElementText {id=06954b84-68d4-4ae4-961f-719f0908c6bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:34368, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 91452, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:34368/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[[[FirefoxDriver: firefox on windows (536f59e8-93a8-461f-a5f4-6cfc370d491e)] -> xpath: //h3[contains(text(),'Other departing flights')]/following-sibling::ul[@class='Rk10dc']
+]] -> xpath: .//li]] -> xpath: .//span[contains(@aria-label, 'Arrival time')]]
+Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference 06954b84-68d4-4ae4-961f-719f0908c6bf is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [536f59e8-93a8-461f-a5f4-6cfc370d491e, getElementText {id=06954b84-68d4-4ae4-961f-719f0908c6bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:34368, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 91452, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:34368/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[[[FirefoxDriver: firefox on windows (536f59e8-93a8-461f-a5f4-6cfc370d491e)] -> xpath: //h3[contains(text(),'Other departing flights')]/following-sibling::ul[@class='Rk10dc']
+]] -> xpath: .//li]] -> xpath: .//span[contains(@aria-label, 'Arrival time')]]
+Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+at com.flightBooking.googleFlights.FlightDetailsData.extractFlightDetails(FlightDetailsData.java:101)
+at com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch(FlightSearchStepDefinitions.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:48:33 CDT" name="tearDown" finished-at="2024-09-05T16:48:33 CDT" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:48:33 CDT" name="setUp" finished-at="2024-09-05T16:48:36 CDT" duration-ms="2589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:48:36 CDT" name="testFlightSearch" data-provider="flightTestData" finished-at="2024-09-05T16:48:58 CDT" duration-ms="21775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[San Francisco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dallas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:48:58 CDT" name="tearDown" finished-at="2024-09-05T16:48:59 CDT" duration-ms="821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:48:59 CDT" name="setUp" finished-at="2024-09-05T16:49:01 CDT" duration-ms="2205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:49:01 CDT" name="testFlightSearch" data-provider="flightTestData" finished-at="2024-09-05T16:49:31 CDT" duration-ms="30255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Los Angeles]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:49:31 CDT" name="tearDown" finished-at="2024-09-05T16:49:32 CDT" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:49:32 CDT" name="setUp" finished-at="2024-09-05T16:49:34 CDT" duration-ms="2189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearchRegression(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:49:34 CDT" name="testFlightSearchRegression" data-provider="flightTestData" finished-at="2024-09-05T16:49:59 CDT" duration-ms="25002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearchRegression -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:49:59 CDT" name="tearDown" finished-at="2024-09-05T16:50:00 CDT" duration-ms="803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:50:00 CDT" name="setUp" finished-at="2024-09-05T16:50:02 CDT" duration-ms="2192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearchRegression(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:50:02 CDT" name="testFlightSearchRegression" data-provider="flightTestData" finished-at="2024-09-05T16:50:22 CDT" duration-ms="20116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[San Francisco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dallas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearchRegression -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:50:22 CDT" name="tearDown" finished-at="2024-09-05T16:50:23 CDT" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:50:23 CDT" name="setUp" finished-at="2024-09-05T16:50:25 CDT" duration-ms="2186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearchRegression(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:50:25 CDT" name="testFlightSearchRegression" data-provider="flightTestData" finished-at="2024-09-05T16:50:54 CDT" duration-ms="28631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Los Angeles]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearchRegression -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:50:54 CDT" name="tearDown" finished-at="2024-09-05T16:50:55 CDT" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:50:55 CDT" name="setUp" finished-at="2024-09-05T16:50:57 CDT" duration-ms="2234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearchSmoke(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:50:57 CDT" name="testFlightSearchSmoke" data-provider="flightTestData" finished-at="2024-09-05T16:51:23 CDT" duration-ms="26172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearchSmoke -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:51:23 CDT" name="tearDown" finished-at="2024-09-05T16:51:24 CDT" duration-ms="756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:51:24 CDT" name="setUp" finished-at="2024-09-05T16:51:26 CDT" duration-ms="2401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearchSmoke(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:51:26 CDT" name="testFlightSearchSmoke" data-provider="flightTestData" finished-at="2024-09-05T16:51:50 CDT" duration-ms="24238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[San Francisco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dallas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearchSmoke -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:51:50 CDT" name="tearDown" finished-at="2024-09-05T16:51:51 CDT" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:51:51 CDT" name="setUp" finished-at="2024-09-05T16:51:53 CDT" duration-ms="2197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearchSmoke(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:51:53 CDT" name="testFlightSearchSmoke" data-provider="flightTestData" finished-at="2024-09-05T16:52:22 CDT" duration-ms="28218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Los Angeles]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2024-09-09]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2024-11-11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearchSmoke -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5]" started-at="2024-09-05T16:52:22 CDT" name="tearDown" finished-at="2024-09-05T16:52:22 CDT" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.flightBooking.googleFlights.FlightSearchStepDefinitions -->
+    </test> <!-- GoogleFlightsSearchTests -->
+  </suite> <!-- FlightBookingAnalyzerSuite -->
+</testng-results>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" class="navigator-link">
+              <span class="suite-name border-failed">FlightBookingAnalyzerSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-FlightBookingAnalyzerSuite" class="navigator-link ">
+                    <span>C:\Users\rayud\Documents\workspace-spring-tool-suite-4-4.24.0.RELEASE\FlightBookingAnalyzer\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-FlightBookingAnalyzerSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-FlightBookingAnalyzerSuite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-FlightBookingAnalyzerSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-FlightBookingAnalyzerSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-FlightBookingAnalyzerSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-FlightBookingAnalyzerSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" class="hide-methods failed suite-FlightBookingAnalyzerSuite"> (hide)</a> <!-- hide-methods failed suite-FlightBookingAnalyzerSuite -->
+                      <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" class="show-methods failed suite-FlightBookingAnalyzerSuite"> (show)</a> <!-- show-methods failed suite-FlightBookingAnalyzerSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-FlightBookingAnalyzerSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearch(New York, London, 2024-09-09, 2024-11-11)">testFlightSearch(New York, London, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-FlightBookingAnalyzerSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" class="hide-methods passed suite-FlightBookingAnalyzerSuite"> (hide)</a> <!-- hide-methods passed suite-FlightBookingAnalyzerSuite -->
+                      <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" class="show-methods passed suite-FlightBookingAnalyzerSuite"> (show)</a> <!-- show-methods passed suite-FlightBookingAnalyzerSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-FlightBookingAnalyzerSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearch(San Francisco, Dallas, 2024-09-09, 2024-11-11)">testFlightSearch(San Francisco, Dallas, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearch(Los Angeles, New York, 2024-09-09, 2024-11-11)">testFlightSearch(Los Angeles, New York, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearchRegression(Los Angeles, New York, 2024-09-09, 2024-11-11)">testFlightSearchRegression(Los Angeles, New York, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearchRegression(San Francisco, Dallas, 2024-09-09, 2024-11-11)">testFlightSearchRegression(San Francisco, Dallas, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearchRegression(New York, London, 2024-09-09, 2024-11-11)">testFlightSearchRegression(New York, London, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearchSmoke(Los Angeles, New York, 2024-09-09, 2024-11-11)">testFlightSearchSmoke(Los Angeles, New York, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearchSmoke(San Francisco, Dallas, 2024-09-09, 2024-11-11)">testFlightSearchSmoke(San Francisco, Dallas, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FlightBookingAnalyzerSuite" title="com.flightBooking.googleFlights.FlightSearchStepDefinitions" class="method navigator-link" hash-for-method="testFlightSearchSmoke(New York, London, 2024-09-09, 2024-11-11)">testFlightSearchSmoke(New York, London, 2024-09-09, 2024-11-11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FlightBookingAnalyzerSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-FlightBookingAnalyzerSuite" class="panel FlightBookingAnalyzerSuite">
+          <div class="suite-FlightBookingAnalyzerSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.flightBooking.googleFlights.FlightSearchStepDefinitions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearch(New York, London, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearch(New York, London, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearch</span>
+                  <span class="parameters">(New York,London,2024-09-09,2024-11-11)</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element with the reference 06954b84-68d4-4ae4-961f-719f0908c6bf is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [536f59e8-93a8-461f-a5f4-6cfc370d491e, getElementText {id=06954b84-68d4-4ae4-961f-719f0908c6bf}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:34368, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 91452, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:34368/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[[[FirefoxDriver: firefox on windows (536f59e8-93a8-461f-a5f4-6cfc370d491e)] -&gt; xpath: //h3[contains(text(),&apos;Other departing flights&apos;)]/following-sibling::ul[@class=&apos;Rk10dc&apos;]
+]] -&gt; xpath: .//li]] -&gt; xpath: .//span[contains(@aria-label, &apos;Arrival time&apos;)]]
+Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at com.flightBooking.googleFlights.FlightDetailsData.extractFlightDetails(FlightDetailsData.java:101)
+	at com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch(FlightSearchStepDefinitions.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FlightBookingAnalyzerSuite-class-failed -->
+          <div class="suite-FlightBookingAnalyzerSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.flightBooking.googleFlights.FlightSearchStepDefinitions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearch(San Francisco, Dallas, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearch(San Francisco, Dallas, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearch</span>
+                  <span class="parameters">(San Francisco,Dallas,2024-09-09,2024-11-11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearch(Los Angeles, New York, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearch(Los Angeles, New York, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearch</span>
+                  <span class="parameters">(Los Angeles,New York,2024-09-09,2024-11-11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearchRegression(Los Angeles, New York, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearchRegression(Los Angeles, New York, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearchRegression</span>
+                  <span class="parameters">(Los Angeles,New York,2024-09-09,2024-11-11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearchRegression(San Francisco, Dallas, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearchRegression(San Francisco, Dallas, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearchRegression</span>
+                  <span class="parameters">(San Francisco,Dallas,2024-09-09,2024-11-11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearchRegression(New York, London, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearchRegression(New York, London, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearchRegression</span>
+                  <span class="parameters">(New York,London,2024-09-09,2024-11-11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearchSmoke(Los Angeles, New York, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearchSmoke(Los Angeles, New York, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearchSmoke</span>
+                  <span class="parameters">(Los Angeles,New York,2024-09-09,2024-11-11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearchSmoke(San Francisco, Dallas, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearchSmoke(San Francisco, Dallas, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearchSmoke</span>
+                  <span class="parameters">(San Francisco,Dallas,2024-09-09,2024-11-11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFlightSearchSmoke(New York, London, 2024-09-09, 2024-11-11)">
+                  </a> <!-- testFlightSearchSmoke(New York, London, 2024-09-09, 2024-11-11) -->
+                  <span class="method-name">testFlightSearchSmoke</span>
+                  <span class="parameters">(New York,London,2024-09-09,2024-11-11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FlightBookingAnalyzerSuite-class-passed -->
+        </div> <!-- panel FlightBookingAnalyzerSuite -->
+        <div panel-name="test-xml-FlightBookingAnalyzerSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\rayud\Documents\workspace-spring-tool-suite-4-4.24.0.RELEASE\FlightBookingAnalyzer\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;FlightBookingAnalyzerSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;GoogleFlightsSearchTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.flightBooking.googleFlights.FlightSearchStepDefinitions&quot;/&gt;
+      &lt;class name=&quot;com.flightBooking.googleFlights.FlightTestData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GoogleFlightsSearchTests --&gt;
+&lt;/suite&gt; &lt;!-- FlightBookingAnalyzerSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-FlightBookingAnalyzerSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for FlightBookingAnalyzerSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GoogleFlightsSearchTests (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-FlightBookingAnalyzerSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for FlightBookingAnalyzerSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFlightSearchRegression</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFlightSearchSmoke</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-FlightBookingAnalyzerSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for FlightBookingAnalyzerSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_FlightBookingAnalyzerSuite');
+function tableData_FlightBookingAnalyzerSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testFlightSearch')
+data.setCell(0, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(0, 3, 30255);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testFlightSearchRegression')
+data.setCell(1, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(1, 3, 28631);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testFlightSearchSmoke')
+data.setCell(2, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(2, 3, 28218);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testFlightSearchSmoke')
+data.setCell(3, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(3, 3, 26172);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testFlightSearchRegression')
+data.setCell(4, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(4, 3, 25002);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testFlightSearchSmoke')
+data.setCell(5, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(5, 3, 24238);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testFlightSearch')
+data.setCell(6, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(6, 3, 21775);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testFlightSearchRegression')
+data.setCell(7, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(7, 3, 20116);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testFlightSearch')
+data.setCell(8, 2, 'com.flightBooking.googleFlights.FlightSearchStepDefinitions')
+data.setCell(8, 3, 18930);
+window.suiteTableData['FlightBookingAnalyzerSuite']= { tableData: data, tableDiv: 'times-div-FlightBookingAnalyzerSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-FlightBookingAnalyzerSuite">
+              </div> <!-- times-div-FlightBookingAnalyzerSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-FlightBookingAnalyzerSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for FlightBookingAnalyzerSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-FlightBookingAnalyzerSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-FlightBookingAnalyzerSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.flightBooking.googleFlights.FlightSearchStepDefinitions</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFlightSearch(New York, London, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">3257 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22192 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23031 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlightSearch(San Francisco, Dallas, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">25620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">47402 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">48224 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlightSearch(Los Angeles, New York, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">50429 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">80685 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">81486 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlightSearchRegression(New York, London, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">83675 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">108680 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">109484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlightSearchRegression(San Francisco, Dallas, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">111676 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">131793 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">132579 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlightSearchRegression(Los Angeles, New York, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">134765 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">163397 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">164183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlightSearchSmoke(New York, London, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">166417 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">192590 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">193346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlightSearchSmoke(San Francisco, Dallas, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">195747 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">219985 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">220752 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFlightSearchSmoke(Los Angeles, New York, 2024-09-09, 2024-11-11)</span>
+                <span class="method-start">222950 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">251173 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
