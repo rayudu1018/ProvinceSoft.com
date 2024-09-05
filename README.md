@@ -1,3 +1,4 @@
+```
 FlightBookingAnalyzer
 │
 ├── src/main/java                 // Main source files
@@ -56,5 +57,5 @@ FlightBookingAnalyzer
 All dependencies are managed through Maven. Ensure the required dependencies (e.g., TestNG, Selenium, etc.) are listed in pom.xml.
 
 
-
+```
 
