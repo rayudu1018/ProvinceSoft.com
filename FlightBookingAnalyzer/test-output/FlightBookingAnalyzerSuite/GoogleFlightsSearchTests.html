@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>GoogleFlightsSearchTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 05 16:48:10 CDT 2024</td>
+<td>Started on:</td><td>Fri Sep 06 12:21:31 CDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>252 seconds (252019 ms)</td>
+<tr><td>Total time:</td><td>249 seconds (249423 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,93 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch()'><b>testFlightSearch</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: New York, London, 2024-09-09, 2024-11-11</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference 06954b84-68d4-4ae4-961f-719f0908c6bf is stale; either its node document is not the active document, or it is no longer connected to the DOM
+<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch()'><b>testFlightSearch</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: San Francisco, Dallas, 2024-09-09, 2024-11-11</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference a540bbc3-50ea-4e29-913b-ee70adf03711 is stale; either its node document is not the active document, or it is no longer connected to the DOM
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [536f59e8-93a8-461f-a5f4-6cfc370d491e, getElementText {id=06954b84-68d4-4ae4-961f-719f0908c6bf}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:34368, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 91452, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:34368/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[[[[[FirefoxDriver: firefox on windows (536f59e8-93a8-461f-a5f4-6cfc370d491e)] -&gt; xpath: //h3[contains(text(),&apos;Other departing flights&apos;)]/following-sibling::ul[@class=&apos;Rk10dc&apos;]
+Command: [b59969c5-7180-42b5-b1cb-dab6c44148c3, getElementText {id=a540bbc3-50ea-4e29-913b-ee70adf03711}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:31564, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 147020, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:31564/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[[[FirefoxDriver: firefox on windows (b59969c5-7180-42b5-b1cb-dab6c44148c3)] -&gt; xpath: //ul[@class=&apos;Rk10dc&apos;]]] -&gt; xpath: .//li]] -&gt; xpath: .//div[@class=&apos;N872Rd sSHqwe I11szd POX3ye&apos;]]
+Session ID: b59969c5-7180-42b5-b1cb-dab6c44148c3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at com.flightBooking.googleFlights.FlightDetailsData.extractFlightDetails(FlightDetailsData.java:81)
+	at com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch(FlightSearchStepDefinitions.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace724886412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace724886412'><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference a540bbc3-50ea-4e29-913b-ee70adf03711 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b59969c5-7180-42b5-b1cb-dab6c44148c3, getElementText {id=a540bbc3-50ea-4e29-913b-ee70adf03711}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:31564, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 147020, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:31564/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[[[FirefoxDriver: firefox on windows (b59969c5-7180-42b5-b1cb-dab6c44148c3)] -&gt; xpath: //ul[@class=&apos;Rk10dc&apos;]]] -&gt; xpath: .//li]] -&gt; xpath: .//div[@class=&apos;N872Rd sSHqwe I11szd POX3ye&apos;]]
+Session ID: b59969c5-7180-42b5-b1cb-dab6c44148c3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at com.flightBooking.googleFlights.FlightDetailsData.extractFlightDetails(FlightDetailsData.java:81)
+	at com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch(FlightSearchStepDefinitions.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>12</td>
+<td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
+<tr>
+<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchSmoke()'><b>testFlightSearchSmoke</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: New York, London, 2024-09-09, 2024-11-11</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference eac388f9-0b89-4858-905d-db84519aa4d8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9b0ae0f5-c840-4ea3-8f3e-66279f2c077f, getElementText {id=eac388f9-0b89-4858-905d-db84519aa4d8}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:27335, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 148424, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27335/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[[[FirefoxDriver: firefox on windows (9b0ae0f5-c840-4ea3-8f3e-66279f2c077f)] -&gt; xpath: //h3[contains(text(),&apos;Other departing flights&apos;)]/following-sibling::ul[@class=&apos;Rk10dc&apos;]
 ]] -&gt; xpath: .//li]] -&gt; xpath: .//span[contains(@aria-label, &apos;Arrival time&apos;)]]
-Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e
+Session ID: 9b0ae0f5-c840-4ea3-8f3e-66279f2c077f
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -97,19 +173,19 @@ Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
 	at com.flightBooking.googleFlights.FlightDetailsData.extractFlightDetails(FlightDetailsData.java:101)
-	at com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch(FlightSearchStepDefinitions.java:40)
+	at com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchSmoke(FlightSearchStepDefinitions.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1831717330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1831717330'><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference 06954b84-68d4-4ae4-961f-719f0908c6bf is stale; either its node document is not the active document, or it is no longer connected to the DOM
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904708954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1904708954'><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference eac388f9-0b89-4858-905d-db84519aa4d8 is stale; either its node document is not the active document, or it is no longer connected to the DOM
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [536f59e8-93a8-461f-a5f4-6cfc370d491e, getElementText {id=06954b84-68d4-4ae4-961f-719f0908c6bf}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:34368, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 91452, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:34368/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[[[[[FirefoxDriver: firefox on windows (536f59e8-93a8-461f-a5f4-6cfc370d491e)] -&gt; xpath: //h3[contains(text(),&apos;Other departing flights&apos;)]/following-sibling::ul[@class=&apos;Rk10dc&apos;]
+Command: [9b0ae0f5-c840-4ea3-8f3e-66279f2c077f, getElementText {id=eac388f9-0b89-4858-905d-db84519aa4d8}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0, moz:accessibilityChecks: false, moz:buildID: 20240829075237, moz:debuggerAddress: 127.0.0.1:27335, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 148424, moz:profile: C:\Users\rayud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27335/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[[[[[FirefoxDriver: firefox on windows (9b0ae0f5-c840-4ea3-8f3e-66279f2c077f)] -&gt; xpath: //h3[contains(text(),&apos;Other departing flights&apos;)]/following-sibling::ul[@class=&apos;Rk10dc&apos;]
 ]] -&gt; xpath: .//li]] -&gt; xpath: .//span[contains(@aria-label, &apos;Arrival time&apos;)]]
-Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e
+Session ID: 9b0ae0f5-c840-4ea3-8f3e-66279f2c077f
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -123,7 +199,7 @@ Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
 	at com.flightBooking.googleFlights.FlightDetailsData.extractFlightDetails(FlightDetailsData.java:101)
-	at com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch(FlightSearchStepDefinitions.java:40)
+	at com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchSmoke(FlightSearchStepDefinitions.java:49)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -163,9 +239,14 @@ Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchRegression()'><b>testFlightSearchRegression</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: Los Angeles, New York, 2024-09-09, 2024-11-11</td>
+<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch()'><b>testFlightSearch</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: New York, London, 2024-09-09, 2024-11-11</td>
 <td></td>
-<td>28</td>
+<td>22</td>
+<td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
+<tr>
+<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchRegression()'><b>testFlightSearchRegression</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: New York, London, 2024-09-09, 2024-11-11</td>
+<td></td>
+<td>26</td>
 <td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
 <tr>
 <td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchRegression()'><b>testFlightSearchRegression</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: San Francisco, Dallas, 2024-09-09, 2024-11-11</td>
@@ -173,34 +254,24 @@ Session ID: 536f59e8-93a8-461f-a5f4-6cfc370d491e
 <td>20</td>
 <td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
 <tr>
-<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchSmoke()'><b>testFlightSearchSmoke</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: Los Angeles, New York, 2024-09-09, 2024-11-11</td>
-<td></td>
-<td>28</td>
-<td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
-<tr>
-<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch()'><b>testFlightSearch</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: San Francisco, Dallas, 2024-09-09, 2024-11-11</td>
-<td></td>
-<td>21</td>
-<td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
-<tr>
 <td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearch()'><b>testFlightSearch</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: Los Angeles, New York, 2024-09-09, 2024-11-11</td>
 <td></td>
-<td>30</td>
-<td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
-<tr>
-<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchRegression()'><b>testFlightSearchRegression</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: New York, London, 2024-09-09, 2024-11-11</td>
-<td></td>
-<td>25</td>
+<td>32</td>
 <td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
 <tr>
 <td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchSmoke()'><b>testFlightSearchSmoke</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: San Francisco, Dallas, 2024-09-09, 2024-11-11</td>
 <td></td>
-<td>24</td>
+<td>22</td>
 <td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
 <tr>
-<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchSmoke()'><b>testFlightSearchSmoke</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: New York, London, 2024-09-09, 2024-11-11</td>
+<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchSmoke()'><b>testFlightSearchSmoke</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: Los Angeles, New York, 2024-09-09, 2024-11-11</td>
 <td></td>
-<td>26</td>
+<td>29</td>
+<td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
+<tr>
+<td title='com.flightBooking.googleFlights.FlightSearchStepDefinitions.testFlightSearchRegression()'><b>testFlightSearchRegression</b><br>Test class: com.flightBooking.googleFlights.FlightSearchStepDefinitions<br>Parameters: Los Angeles, New York, 2024-09-09, 2024-11-11</td>
+<td></td>
+<td>32</td>
 <td>com.flightBooking.googleFlights.FlightSearchStepDefinitions@5038d0b5</td></tr>
 </table><p>
 </body>
