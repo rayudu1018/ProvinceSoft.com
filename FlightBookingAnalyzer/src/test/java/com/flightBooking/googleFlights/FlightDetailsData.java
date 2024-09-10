@@ -149,12 +149,12 @@ public class FlightDetailsData {
 			int longestDuration = Collections.max(durations);
 			int longestIndex = durations.indexOf(longestDuration);
 
-			System.out.println("****************************");
+			System.out.println("*******************************************************");
 			System.out.println("");
 			System.out.println("From: " + departureCity + " To: " + destinationCity);
 			System.out.println("From: " + departureDate + " To: " + returnDate);
 			System.out.println("");
-			System.out.println("****************************");
+			System.out.println("*******************************************************");
 
 			System.out.println("");
 			System.out.println("**Cheapest price flight details are: **");
@@ -168,8 +168,6 @@ public class FlightDetailsData {
 			System.out.println("              Duration: " + FlightBookingUtils.formatDuration(durations.get(mostExpensiveIndex)));
 			System.out.println("              Flight Name: " + flightNames.get(mostExpensiveIndex));
 			System.out.println("");
-
-			System.out.println("****************************");
 
 			System.out.println("**Shortest Duration flight details are: **");
 			System.out.println("              Duration: " + FlightBookingUtils.formatDuration(shortestDuration));

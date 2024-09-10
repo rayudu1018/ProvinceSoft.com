@@ -13,4 +13,12 @@ public class FlightTestData {
         };
     }
     
+    public Object[][] flightData1() {
+        return new Object[][]{
+            {"New York", "London","2024-09-09","2024-11-11"},
+            {"San Francisco", "Dallas","2024-09-09","2024-11-11"},
+            {"Los Angeles", "New York","2024-09-09","2024-11-11"}
+        };
+    }
+    
 }
